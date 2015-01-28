@@ -1,0 +1,13 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<% @posts = Post.all %>
+
+<% @posts.each do |post| %>
+	<label><%= post.user %> <%= post.text %></label>
+	<a href="/posts/<%= post.id%>">show</a>
+	<br>
+
+<% end %>
+
+<a href="/posts/new">Create new post</a>
