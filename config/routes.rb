@@ -1,6 +1,11 @@
 Rails.application.routes.draw do  
   
+  resources :orders
+
   resources :posts
+
+  resources :pens
+            
 
   devise_for :admin, controllers: { sessions: "admin/sessions" }
   devise_scope :admin do 
@@ -16,3 +21,4 @@ Rails.application.routes.draw do
 
   root 'home#index'
 end
+

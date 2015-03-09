@@ -1,0 +1,9 @@
+<h1>Pens#index</h1>
+
+<% @pens.each do |pen| %>
+	<label><%= pen.color %> <%= pen.amount %></label>
+	<a href= "<%= edit_pen_path(pen.id) %>"> edit</a>
+	<%= link_to 'delete', pen, :method => :delete %>
+	<br>
+<% end %>
+<a href= "/pens/new">Create new pen</a>

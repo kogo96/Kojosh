@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  amount: 1
+  pickup_time: 2015-03-09 12:07:42
+  price: 9.99
+  is_approved: false
+  is_picked_up: false
+
+two:
+  name: MyString
+  amount: 1
+  pickup_time: 2015-03-09 12:07:42
+  price: 9.99
+  is_approved: false
+  is_picked_up: false
